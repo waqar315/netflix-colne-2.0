@@ -1,0 +1,33 @@
+.row {
+  margin: 0 0 0 20px;
+  /* OR */
+  /* margin-left: 20px; */
+}
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+.row__poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  /* to make somooodher hover over changes */
+  transition: transform 400ms;
+}
+/* when hover over the single row__poster then change it scale(size)  */
+.row__poster:hover {
+  transform: scale(1.08);
+}
+.row__posterLarge:hover {
+  transform: scale(1.09);
+}
+/* use for hide the scrole bar for all web browser */
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+.row__posterLarge {
+  max-height: 250px;
+}
